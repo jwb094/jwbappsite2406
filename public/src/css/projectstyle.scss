@@ -1,8 +1,8 @@
     /* 
     *Config Setup Grid System and framework
     */
-    @use "../../node_modules/normalize.css/normalize.css";
-    @use "../../node_modules/flexboxgrid/css/flexboxgrid.min.css";
+    @use "../../../node_modules/normalize.css/normalize.css";
+    @use "../../../node_modules/flexboxgrid/css/flexboxgrid.min.css";
 
     @use "uniform" as * with (
     $config: (
@@ -22,4 +22,4 @@
     }
     @import "typography";
     @import "components/partials1";
-    @import "project_mixin";
+    @import "project_mixins";
