@@ -1,0 +1,42 @@
+    @font-face {
+        font-family: 'Font-Name';
+        src: url('..');
+        src: url('../ttf') format('truetype'),
+        url('../.woff') format('woff'),
+        url('../.woff2') format('woff2');
+
+        font-display: swap;
+
+    }
+
+    *{
+     //font-family:;   
+    }
+
+    p{
+     //font-family:;   
+    }
+
+    h1,h2,h4,h4,h5,h6{
+     //font-family:;   
+    }
+
+    h1,.h1{
+     //font-family:;   
+    }
+    h2,.h2{
+     //font-family:;   
+    }
+    h3,.h3{
+     //font-family:;   
+    }
+    h4,.h4{
+     //font-family:;   
+    }
+    h5,.h5{
+     //font-size:;   
+    }
+     h6,.h6{
+     //font-family:;   
+    }
+
