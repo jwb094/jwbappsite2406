@@ -24,7 +24,7 @@
     </head>
 
     <body>
-        <nav class="l-container">
+        <nav class="l-container hidden">
             <div class="row">
                 <div class="col-xs-12 col-md-4">LOGO</div>
                 <div class="col-xs-12 col-md-4">
@@ -53,17 +53,50 @@
 
             ?>
 
-            <section data-component-hero class="" id="hero">
-                <div class="l-container">
-                    <div class="border-1 border-solid border-black flex flex-col justify-content-center">
-                        <div class="col-xs-12 col-md-4">
-                            <h1><?= $sectionTitle1 ?></h1>
-                            <p><?= $context ?></p>
-                        </div>
-                        <div class="col-xs-12 col-md-4">Middle
-                            <button>Play</button>
-                        </div>
-                        <div class="col-xs-12 col-md-4"><a href="">CTA</a></div>
+            <section data-component-hero class="h-50vh" id="hero">
+                
+                    <div class="border-1 border-solid border-black flex flex-col md.justify-content-center md.align-content-center md.flex-wrap py-56 md.py-48 h-100p">
+                        <div class="l-container | h-100p">
+                            <div class="row | flex-row justify-content-center md.justify-content-unset h-100p">
+                                <div class="col-xs-12 | text-center">
+                                    <h1><?= $sectionTitle1 ?></h1>
+                                </div>
+                                <div class="col-xs-12">
+                                    <p><?= $context ?></p>
+                                </div>
+
+
+                                <div class="col-xs-12 | text-center">
+                                    <button>Play</button>
+                                </div>
+                                <div class="col-xs-12 mt-auto | text-center">
+                                    <a href="">CTA</a>
+                                </div>
+                            </div>
+                            <!-- <div class="row | flex flex-col">
+                            <div>TOP</div>
+                            <div>MID</div>
+                            <div>BTM</div>
+                            <div>BTM</div>
+                            </div> -->
+                            <!-- <div class="row">
+                                <div>MID</div>
+                                </div>
+                                <div class="row">
+                                    <div>BTM</div>
+                                    </div>
+                                    <div class="row">
+                                        <div>BTM</div>
+                                        </div> -->
+                                <!-- <div class="col-xs-12 col-md-4 | mb-auto">
+                                    <h1><?= $sectionTitle1 ?></h1>
+                                    <p><?= $context ?></p>
+                                </div>
+                                <div class="col-xs-12 col-md-4">Middle
+                                    <button>Play</button>
+                                </div>
+                                <div class="col-xs-12 col-md-4"><a href="">CTA</a></div> -->
+                      
                     </div>
                 </div>
             </section>
