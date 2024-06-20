@@ -100,13 +100,19 @@
                     </div>
                 </div>
             </section>
-            <section data-component-download-now class="" id="download-now">
+            <section data-component-download-now class=" pt-64 pb-64" id="download-now">
                 <div class="l-container">
                     <div class="row">
                         <div class="col-xs-12 col-md-8">
-                            <h2><?= $sectionTitle2 ?></h2>
-                            <p><?= $context ?></p>
-                            <a href="">CTA</a>
+                            <h2 class="mb-24"><?= $sectionTitle2 ?></h2>
+                            <div class=" flex flex-col  justify-content-between | mb-24 " >
+                                <p class="mb-24"><?= $context ?>
+                                </p>
+                                <p class="mb-24"><?= $context ?>
+                                </p>
+                            </div>
+                           
+                            <a  class="mt-32 mb-24" href="#">CTA</a>
                         </div>
                     </div>
                 </div>
@@ -114,15 +120,21 @@
             <section data-component-testmonials class="" id="testmonials">
                 <div class="l-container">
                     <div class="row ">
-                        <div>
-                            <img src="" alt="">
-                            <p>testominalscontext</p>
-                        </div>
-                        <div> <img src="" alt="">
-                            <p>testominalscontext</p>
-                        </div>
-                        <div> <img src="" alt="">
-                            <p>testominalscontext</p>
+                        <div class="col-xs-12 col-md-12">
+                            <div class="c-testmonials-main-carousel">
+                            <div class="c-testmonials-main-carousel | flex flex-col justify-content-center align-content-center">
+                                <img class="w-3-12 | mx-auto" src="https://placeholder.pics/svg/132x132" alt="">
+                                <p class="mt-24"><?php echo $testominalscontext ?></p>
+                            </div>
+                            <div class="c-testmonials-main-carousel | flex flex-col justify-content-center align-content-center"> 
+                                <img class="w-3-12 | mx-auto" src="https://placeholder.pics/svg/132x132" alt="">
+                                <p class="mt-24"><?php echo $testominalscontext ?></p>
+                            </div>
+                            <div class="c-testmonials-main-carousel | flex flex-col justify-content-center align-content-center"> 
+                                <img class="w-3-12 mx-auto" src="https://placeholder.pics/svg/132x132" alt="">
+                                <p class="mt-24"><?php echo $testominalscontext ?></p>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
