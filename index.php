@@ -18,8 +18,6 @@
         <link rel="icon" href="/favicon.ico" sizes="any">
         <link rel="icon" href="/icon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="icon.png">
-
-        <link rel="manifest" href="site.webmanifest">
         <meta name="theme-color" content="#fafafa">
     </head>
 
@@ -100,7 +98,7 @@
                     </div>
                 </div>
             </section>
-            <section data-component-download-now class=" pt-64 pb-64" id="download-now">
+            <section data-component-download-now class="border-1 border-solid border-black | pt-64 pb-64" id="download-now">
                 <div class="l-container">
                     <div class="row">
                         <div class="col-xs-12 col-md-8">
@@ -117,57 +115,49 @@
                     </div>
                 </div>
             </section>
-            <section data-component-testmonials class="" id="testmonials">
+            <section data-component-testmonials class="border-1 border-solid border-black py-96" id="testmonials">
                 <div class="l-container">
                     <div class="row ">
                         <div class="col-xs-12 col-md-12">
                             <div class="c-testmonials-main-carousel">
-                            <div class="c-testmonials-main-carousel | flex flex-col justify-content-center align-content-center">
-                                <img class="w-3-12 | mx-auto" src="https://placeholder.pics/svg/132x132" alt="">
-                                <p class="mt-24"><?php echo $testominalscontext ?></p>
-                            </div>
-                            <div class="c-testmonials-main-carousel | flex flex-col justify-content-center align-content-center"> 
-                                <img class="w-3-12 | mx-auto" src="https://placeholder.pics/svg/132x132" alt="">
-                                <p class="mt-24"><?php echo $testominalscontext ?></p>
-                            </div>
-                            <div class="c-testmonials-main-carousel | flex flex-col justify-content-center align-content-center"> 
-                                <img class="w-3-12 mx-auto" src="https://placeholder.pics/svg/132x132" alt="">
-                                <p class="mt-24"><?php echo $testominalscontext ?></p>
-                            </div>
+                                <?php
+                                    for ($i=1; $i <= 3; $i++) { 
+                                        
+                                        echo "<div id='' class='c-testmonials-carousel-item-$i | flex flex-col justify-content-center align-content-center'>
+                                        <img class='w-3-12 | mx-auto' src='https://placeholder.pics/svg/132x132' alt=''>
+                                        <p class='mt-24  mx-auto'>$testominalscontext </p>
+                                    </div>";
+                                
+                                    }
+                            ?>
+                            
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section data-component-features class="" id="features">
+            <section data-component-features class="border-1 border-solid border-black | py-96" id="features">
                 <div class="l-container">
-                    <div class="grid grid-cols-1 md.grid-cols-2 gap-14">
-                        <div class="">
-                            <h3><?= $sectionTitle3 ?></h3>
-                            <p><?= $context ?></p>
-                        </div>
-                        <div class="">
-                            <h3><?= $sectionTitle3 ?></h3>
-                            <p><?= $context ?></p>
-                        </div>
-                        <div class="">
-                            <h3><?= $sectionTitle3 ?></h3>
-                            <p><?= $context ?></p>
-                        </div>
-                        <div class="">
-                            <h3><?= $sectionTitle3 ?></h3>
-                            <p><?= $context ?></p>
-                        </div>
+                    <div class="grid grid-cols-1 md.grid-cols-2 row-gap-64">
+                    <?php
+                                    for ($i=1; $i <= 4; $i++) { 
+                        echo "<div class=''>
+                            <h3 id='' class='mb-24 feature-$i'> $sectionTitle3  $i</h3>
+                            <p class=''> $context</p>
+                        </div>";
+                    }
+                    ?>
+                 
                     </div>
 
 
-                    <div>
-                        <a href="#">Try Now Demo</a>
+                    <div class="col-xs-12 col-md-12 | mt-48">
+                        <a class="flex justify-content-center" href="#">Try Now Demo</a>
                     </div>
                 </div>
 
             </section>
-            <section data-component-design class="" id="">
+            <section data-component-design class="border-1 border-solid border-black" id="">
                 <div class="l-container">
                     <div class="row">
                         <div class="col-xs-12 col-md-12">
