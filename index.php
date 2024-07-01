@@ -43,7 +43,8 @@
             $sectionTitle2 = "Lorem ipsum Title 2";
             $sectionTitle3 = "Lorem ipsum Title 3";
             $sectionTitle4 = "Lorem ipsum Title 4";
-            $context = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi voluptas fugiat nostrum itaque laborum voluptate corporis adipisci nulla error suscipit libero nesciunt. Magnam!";
+            $contextLg = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi voluptas fugiat nostrum itaque laborum voluptate corporis adipisci nulla error suscipit libero nesciunt. Magnam!";
+            $contextSml = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi";
             $footerContent1 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi voluptas fugiat nostrum itaque laborum";
             $footerContent2 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi voluptas fugiat nostrum itaque laborum";
             $testominalscontext = "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
@@ -60,7 +61,7 @@
                                     <h1><?= $sectionTitle1 ?></h1>
                                 </div>
                                 <div class="col-xs-12">
-                                    <p><?= $context ?></p>
+                                    <p><?= $contextLg ?></p>
                                 </div>
 
 
@@ -88,7 +89,7 @@
                                         </div> -->
                                 <!-- <div class="col-xs-12 col-md-4 | mb-auto">
                                     <h1><?= $sectionTitle1 ?></h1>
-                                    <p><?= $context ?></p>
+                                    <p><?= $contextLg ?></p>
                                 </div>
                                 <div class="col-xs-12 col-md-4">Middle
                                     <button>Play</button>
@@ -104,9 +105,9 @@
                         <div class="col-xs-12 col-md-8">
                             <h2 class="mb-24"><?= $sectionTitle2 ?></h2>
                             <div class=" flex flex-col  justify-content-between | mb-24 " >
-                                <p class="mb-24"><?= $context ?>
+                                <p class="mb-24"><?= $contextLg ?>
                                 </p>
-                                <p class="mb-24"><?= $context ?>
+                                <p class="mb-24"><?= $contextLg ?>
                                 </p>
                             </div>
                            
@@ -143,7 +144,7 @@
                                     for ($i=1; $i <= 4; $i++) { 
                         echo "<div class=''>
                             <h3 id='' class='mb-24 feature-$i'> $sectionTitle3  $i</h3>
-                            <p class=''> $context</p>
+                            <p class=''> $contextLg</p>
                         </div>";
                     }
                     ?>
@@ -157,64 +158,44 @@
                 </div>
 
             </section>
-            <section data-component-design class="border-1 border-solid border-black" id="">
+            <section data-component-design class="border-1 border-solid border-black pt-96 pb-256" id="">
                 <div class="l-container">
                     <div class="row">
                         <div class="col-xs-12 col-md-12">
                             <div class="slider">
                                 <!-- Slider Item 1::START-->
                                 <ul>
-                                    <li class="slider-item-1">
-                                        <div class="col-xs-12 col-md-4">
-                                            <div class="img_bloc">
-                                                <img src="" alt="">
-                                                <div>img content</div>
+                                    <?php
+                                    for ($i=1; $i <= 3; $i++) { 
+                                        echo"  
+                                        <li class='slider-item-$i | flex flex-col md.flex-row'>
+                                            <div class='col-xs-12 col-md-4'>
+                                                <div class='img_bloc'>
+                                                    <img class='https://placeholder.pics/svg/475x346' src='' alt=''>
+                                                    <div class=''>
+                                                        <p>Card Title $i</p>
+                                                        <p>Feature </p>
+                                                        </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-4">
-                                            <div class="img_bloc">
-                                                <img src="" alt="">
-                                                <div>img content</div>
+                                            <div class='col-xs-12 col-md-4'>
+                                                <div class='img_bloc'>
+                                                    <img class='https://placeholder.pics/svg/475x346' src='' alt=''>
+                                                    <div class=''>
+                                                        <p>Card Title $i</p>
+                                                        <p>Feature </p>
+                                                        </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-4">
-                                            <p> content</p>
-                                        </div>
-                                    </li>
-                                    <li class="slider-item-2">
-                                        <div class="col-xs-12 col-md-4">
-                                            <div class="img_bloc">
-                                                <img src="" alt="">
-                                                <div>img content</div>
+                                            <div class='col-xs-12 col-md-4'>
+                                                <div><h5>$sectionTitle4</h5></div>
+                                                <p class=''> $contextSml</p>
                                             </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-4">
-                                            <div class="img_bloc">
-                                                <img src="" alt="">
-                                                <div>img content</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-4">
-                                            <p> content</p>
-                                        </div>
-                                    </li>
-                                    <li class="slider-item-3">
-                                        <div class="col-xs-12 col-md-4">
-                                            <div class="img_bloc">
-                                                <img src="" alt="">
-                                                <div>img content</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-4">
-                                            <div class="img_bloc">
-                                                <img src="" alt="">
-                                                <div>img content</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-4">
-                                            <p> content</p>
-                                        </div>
-                                    </li>
+                                        </li>";
+                                    }
+                                    ?>
+                                  
+                     
                                 </ul>
 
                             </div>
@@ -223,38 +204,40 @@
                 </div>
             </section>
         </main>
-        <!-- Add your site or application content here -->
-        <p class="l-container">Welcome to world! This is HTML5 Boilerplate.</p>
+
         <script src="public/dist/js/app.js"></script>
 
         <?php
         // Array of footer links
         $footerLinks = ["Home", "Work", "Contact", "People",];
         $socialLinks = ["Fb", "Ln", "X", "Insta"];
+        $footerPageLinks = ["Item 1", "Item 2", "item 3", "item 4", "item 5"];
         ?>
-        <footer class>
+        <footer class="border-1 border-solid border-black | pt-96 pb-256">
             <div class="l-container">
                 <div class="row">
                     <div class="col-xs-12 col-md-4">
-                    <p><?=$footerContent1 ?> </p>
+                    <p class="mt-24"><?=$footerContent1 ?> </p>
                     </div>
                     <div class="col-xs-12 col-md-4 ">
-                            <p><?=$footerContent2 ?> </p>
+                            <p class="mt-32 mb-24 "><?=$footerContent2 ?> </p>
                     </div>
-                    <div class="col-xs-12 col-md-2 col-xs-offset-2 flex justify-content-end">
-                        <ul class="flex flex-col md.flex-row justify-content-between">
+                    <div class="col-xs-12 col-md-2 md.col-xs-offset-2 flex md.justify-content-end">
+                        <ul class="flex flex-col justify-content-between">
 
                             <?php
                             // Loop through colors and create an option for each color
-                            foreach ($socialLinks as $slink) {
-                                echo "<li class=''>$slink</li>";
+                            foreach ($footerPageLinks as $fplink) {
+                                echo "<li class='my-12'>$fplink</li>";
                             }
                             ?>
                         </ul>
                     </div>
+                </div>
                     <div class="row">
-                        <div class="col-xs-12 col-md-12"> <img src="" alt=""> </div>
-                        <h3>Lorem, ipsum dolor.</h3>
+                        <div class="col-xs-12 col-md-12 mx-auto"> <img class="mx-auto" src="https://placeholder.pics/svg/64x64" alt="">
+                            <h3 class="text-center mt-18">Lorem, ipsum dolor.</h3>
+                        </div>
                     </div>
 
         </footer>
