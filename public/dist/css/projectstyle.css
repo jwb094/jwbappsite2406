@@ -48254,6 +48254,14 @@ select {
 [data-component-design] {
   background-color: rgba(227, 223, 223, 0.5490196078);
 }
+[data-component-design] .c-design-carousel .flickity-button {
+  display: none;
+}
+@media (min-width: 900px) {
+  [data-component-design] .c-design-carousel {
+    height: 500px;
+  }
+}
 
 footer {
   background-color: #08C7D1;

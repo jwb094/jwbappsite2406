@@ -1,3 +1,18 @@
 [data-component-design]{
     background-color: #e3dfdf8c;
+
+
+    .c-design-carousel{
+        .flickity-button {
+            display: none;
+            }
+          //some CSS
+        @media  (min-width: $sml) {
+            //do Smth
+        }
+        @media (min-width: $med) {
+            height: 500px;
+        }
+     
+    }
 }

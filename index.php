@@ -6,6 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title></title>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <link rel="stylesheet" href="public/dist/css/projectstyle.css">
         <meta name="description" content="">
 
@@ -164,14 +165,14 @@
                         <div class="col-xs-12 col-md-12">
                             <div class="slider">
                                 <!-- Slider Item 1::START-->
-                                <ul>
+                                <ul class="main-carousel c-design-carousel">
                                     <?php
                                     for ($i=1; $i <= 3; $i++) { 
                                         echo"  
                                         <li class='slider-item-$i | flex flex-col md.flex-row'>
                                             <div class='col-xs-12 col-md-4'>
                                                 <div class='img_bloc'>
-                                                    <img class='https://placeholder.pics/svg/475x346' src='' alt=''>
+                                                    <img class='' src='https://placeholder.pics/svg/475x346' alt=''>
                                                     <div class=''>
                                                         <p>Card Title $i</p>
                                                         <p>Feature </p>
@@ -180,7 +181,7 @@
                                             </div>
                                             <div class='col-xs-12 col-md-4'>
                                                 <div class='img_bloc'>
-                                                    <img class='https://placeholder.pics/svg/475x346' src='' alt=''>
+                                                   <img class='' src='https://placeholder.pics/svg/475x346' alt=''>
                                                     <div class=''>
                                                         <p>Card Title $i</p>
                                                         <p>Feature </p>
@@ -188,7 +189,7 @@
                                                 </div>
                                             </div>
                                             <div class='col-xs-12 col-md-4'>
-                                                <div><h5>$sectionTitle4</h5></div>
+                                                <div><h5> sectionTitle $i</h5></div>
                                                 <p class=''> $contextSml</p>
                                             </div>
                                         </li>";
@@ -205,7 +206,7 @@
             </section>
         </main>
 
-        <script src="public/dist/js/app.js"></script>
+       
 
         <?php
         // Array of footer links
@@ -242,5 +243,21 @@
 
         </footer>
     </body>
-
+    <!-- JavaScript -->
+    <script src="public/dist/js/app.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </html>
+
+    <script >
+        var elem = document.querySelector('.main-carousel');
+        var flkty = new Flickity( elem, {
+        // options
+        cellAlign: 'left',
+        contain: true,
+        draggable: false,
+        pageDots: false,
+        prevNextButtons: false,
+         autoPlay: 5000,  
+    pauseAutoPlayOnHover: false
+        });
+    </script>
