@@ -43,7 +43,7 @@
             $sectionTitle2 = "Lorem ipsum Title 2";
             $sectionTitle3 = "Lorem ipsum Title 3";
             $sectionTitle4 = "Lorem ipsum Title 4";
-            $contextLg = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi voluptas fugiat nostrum itaque laborum voluptate corporis adipisci nulla error suscipit libero nesciunt. Magnam!";
+            $contextLg = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi voluptas fugiat nostrum itaque laborum voluptate corporis adipisci nulla error suscipit libero nesciunt. Magnam!t nostrum itaque laborum voluptate corporis adipisci nulla error suscipit libero nesciunt. Magnam!";
             $contextSml = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi";
             $footerContent1 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi voluptas fugiat nostrum itaque laborum";
             $footerContent2 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi voluptas fugiat nostrum itaque laborum";
@@ -217,13 +217,13 @@
             <div class="l-container">
                 <div class="row">
                     <div class="col-xs-12 col-md-4">
-                    <p class="mt-24"><?=$footerContent1 ?> </p>
+                    <p class="mt-24 leading-150 pr-18"><?=$contextLg ?> </p>
                     </div>
-                    <div class="col-xs-12 col-md-4 ">
-                            <p class="mt-32 mb-24 "><?=$footerContent2 ?> </p>
+                    <div class="col-xs-12 col-md-3 ">
+                            <p class="mt-24 mb-24 leading-150"><?=$footerContent2 ?> </p>
                     </div>
-                    <div class="col-xs-12 col-md-2 md.col-xs-offset-2 flex md.justify-content-end">
-                        <ul class="flex flex-col justify-content-between">
+                    <div class="col-xs-12 col-md-4 md.col-md-offset-2 flex md.justify-content-end">
+                        <ul class="flex flex-col justify-content-between |  mt-24">
 
                             <?php
                             // Loop through colors and create an option for each color
@@ -235,8 +235,8 @@
                     </div>
                 </div>
                     <div class="row">
-                        <div class="col-xs-12 col-md-12 mx-auto"> <img class="mx-auto" src="https://placeholder.pics/svg/64x64" alt="">
-                            <h3 class="text-center mt-18">Lorem, ipsum dolor.</h3>
+                        <div class="col-xs-12 col-md-12  md.mt-48 mx-auto | "> <img class="mx-auto" src="https://placeholder.pics/svg/64x64" alt="">
+                            <h3 class="text-center mt-24">Lorem, ipsum dolor.</h3>
                         </div>
                     </div>
 

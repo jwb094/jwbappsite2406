@@ -48246,3 +48246,16 @@ select {
   height: auto;
   background-size: cover;
 }
+
+[data-component-features] {
+  background-color: #fff;
+}
+
+[data-component-design] {
+  background-color: rgba(227, 223, 223, 0.5490196078);
+}
+
+footer {
+  background-color: #08C7D1;
+  color: #fff;
+}

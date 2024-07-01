@@ -22,7 +22,16 @@
     }
     @import "typography";
     @import "project_mixins";
-    @import "components/c_home";
+    //@import "components/c_home";
+    
+
+    @import "components/c_hero";
+    @import "components/c_download_now";
+    @import "components/c_testmonials";
+    @import "components/c_features";
+    @import "components/c_design";
+
+    @import "components/footer";
    
 
 
