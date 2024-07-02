@@ -1,7 +1,5 @@
 [data-component-design]{
-    background-color: #e3dfdf8c;
-
-
+    background-color: #dad3d352;
     .c-design-carousel{
         .flickity-button {
             display: none;
@@ -11,8 +9,7 @@
             //do Smth
         }
         @media (min-width: $med) {
-            height: 500px;
+            height: 300px;
         }
-     
     }
 }

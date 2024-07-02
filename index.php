@@ -44,8 +44,9 @@
             $sectionTitle2 = "Lorem ipsum Title 2";
             $sectionTitle3 = "Lorem ipsum Title 3";
             $sectionTitle4 = "Lorem ipsum Title 4";
+            $contextSml = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo";
+            $contextMed = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi";
             $contextLg = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi voluptas fugiat nostrum itaque laborum voluptate corporis adipisci nulla error suscipit libero nesciunt. Magnam!t nostrum itaque laborum voluptate corporis adipisci nulla error suscipit libero nesciunt. Magnam!";
-            $contextSml = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi";
             $footerContent1 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi voluptas fugiat nostrum itaque laborum";
             $footerContent2 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi voluptas fugiat nostrum itaque laborum";
             $testominalscontext = "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
@@ -54,32 +55,32 @@
             ?>
 
             <section data-component-hero class="h-50vh" id="hero">
-                
-                    <div class="border-1 border-solid border-black flex flex-col md.justify-content-center md.align-content-center md.flex-wrap py-56 md.py-48 h-100p">
-                        <div class="l-container | h-100p">
-                            <div class="row | flex-row justify-content-center md.justify-content-unset h-100p">
-                                <div class="col-xs-12 | text-center">
-                                    <h1><?= $sectionTitle1 ?></h1>
-                                </div>
-                                <div class="col-xs-12">
-                                    <p><?= $contextLg ?></p>
-                                </div>
 
-
-                                <div class="col-xs-12 | text-center">
-                                    <button>Play</button>
-                                </div>
-                                <div class="col-xs-12 mt-auto | text-center">
-                                    <a href="">CTA</a>
-                                </div>
+                <div class="border-1 border-solid border-black flex flex-col md.justify-content-center md.align-content-center md.flex-wrap py-56 md.py-48 h-100p">
+                    <div class="l-container | h-100p">
+                        <div class="row | flex-row justify-content-center md.justify-content-unset h-100p">
+                            <div class="col-xs-12 | text-center">
+                                <h1><?= $sectionTitle1 ?></h1>
                             </div>
-                            <!-- <div class="row | flex flex-col">
+                            <div class="col-xs-12">
+                                <p><?= $contextLg ?></p>
+                            </div>
+
+
+                            <div class="col-xs-12 | text-center">
+                                <button>Play</button>
+                            </div>
+                            <div class="col-xs-12 mt-auto | text-center">
+                                <a href="">CTA</a>
+                            </div>
+                        </div>
+                        <!-- <div class="row | flex flex-col">
                             <div>TOP</div>
                             <div>MID</div>
                             <div>BTM</div>
                             <div>BTM</div>
                             </div> -->
-                            <!-- <div class="row">
+                        <!-- <div class="row">
                                 <div>MID</div>
                                 </div>
                                 <div class="row">
@@ -88,7 +89,7 @@
                                     <div class="row">
                                         <div>BTM</div>
                                         </div> -->
-                                <!-- <div class="col-xs-12 col-md-4 | mb-auto">
+                        <!-- <div class="col-xs-12 col-md-4 | mb-auto">
                                     <h1><?= $sectionTitle1 ?></h1>
                                     <p><?= $contextLg ?></p>
                                 </div>
@@ -96,7 +97,7 @@
                                     <button>Play</button>
                                 </div>
                                 <div class="col-xs-12 col-md-4"><a href="">CTA</a></div> -->
-                      
+
                     </div>
                 </div>
             </section>
@@ -105,14 +106,14 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-8">
                             <h2 class="mb-24"><?= $sectionTitle2 ?></h2>
-                            <div class=" flex flex-col  justify-content-between | mb-24 " >
+                            <div class=" flex flex-col  justify-content-between | mb-24 ">
                                 <p class="mb-24"><?= $contextLg ?>
                                 </p>
                                 <p class="mb-24"><?= $contextLg ?>
                                 </p>
                             </div>
-                           
-                            <a  class="mt-32 mb-24" href="#">CTA</a>
+
+                            <a class="mt-32 mb-24" href="#">CTA</a>
                         </div>
                     </div>
                 </div>
@@ -123,16 +124,15 @@
                         <div class="col-xs-12 col-md-12">
                             <div class="c-testmonials-main-carousel">
                                 <?php
-                                    for ($i=1; $i <= 3; $i++) { 
-                                        
-                                        echo "<div id='' class='c-testmonials-carousel-item-$i | flex flex-col justify-content-center align-content-center'>
+                                for ($i = 1; $i <= 3; $i++) {
+
+                                    echo "<div id='' class='c-testmonials-carousel-item-$i | flex flex-col justify-content-center align-content-center'>
                                         <img class='w-3-12 | mx-auto' src='https://placeholder.pics/svg/132x132' alt=''>
                                         <p class='mt-24  mx-auto'>$testominalscontext </p>
                                     </div>";
-                                
-                                    }
-                            ?>
-                            
+                                }
+                                ?>
+
                             </div>
                         </div>
                     </div>
@@ -141,15 +141,15 @@
             <section data-component-features class="border-1 border-solid border-black | py-96" id="features">
                 <div class="l-container">
                     <div class="grid grid-cols-1 md.grid-cols-2 row-gap-64">
-                    <?php
-                                    for ($i=1; $i <= 4; $i++) { 
-                        echo "<div class=''>
+                        <?php
+                        for ($i = 1; $i <= 4; $i++) {
+                            echo "<div class=''>
                             <h3 id='' class='mb-24 feature-$i'> $sectionTitle3  $i</h3>
                             <p class=''> $contextLg</p>
                         </div>";
-                    }
-                    ?>
-                 
+                        }
+                        ?>
+
                     </div>
 
 
@@ -163,40 +163,40 @@
                 <div class="l-container">
                     <div class="row">
                         <div class="col-xs-12 col-md-12">
-                            <div class="slider">
-                                <!-- Slider Item 1::START-->
+                            <div class="slider">                  
                                 <ul class="main-carousel c-design-carousel">
                                     <?php
-                                    for ($i=1; $i <= 3; $i++) { 
-                                        echo"  
+                                    for ($i = 1; $i <= 3; $i++) {
+                                        echo "  
                                         <li class='slider-item-$i | flex flex-col md.flex-row'>
                                             <div class='col-xs-12 col-md-4'>
                                                 <div class='img_bloc'>
                                                     <img class='' src='https://placeholder.pics/svg/475x346' alt=''>
-                                                    <div class=''>
-                                                        <p>Card Title $i</p>
-                                                        <p>Feature </p>
-                                                        </div>
+                                                    <div class='bg-white | py-48 px-24'>
+                                                        <p class='bold color-gray-500 | mb-24'>Card Title $i</p>
+                                                        <p class='italic gray-200'>Feature $i</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class='col-xs-12 col-md-4'>
+                                            <div class='col-xs-12 col-md-4 | [ mt-24 md.mt-0 ]'>
                                                 <div class='img_bloc'>
-                                                   <img class='' src='https://placeholder.pics/svg/475x346' alt=''>
-                                                    <div class=''>
-                                                        <p>Card Title $i</p>
-                                                        <p>Feature </p>
-                                                        </div>
+                                                <img class='' src='https://placeholder.pics/svg/475x346' alt=''>
+                                                    <div class='bg-white | p-48'>
+                                                        <p class='bold color-gray-500 | mb-24'>Card Title $i</p>
+                                                        <p class='italic gray-200'>  Feature $i</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class='col-xs-12 col-md-4'>
-                                                <div><h5> sectionTitle $i</h5></div>
-                                                <p class=''> $contextSml</p>
+                                            <div class='col-xs-12 col-md-4 | [ mt-24 md.mt-0 ]'>
+                                                <h3 class='[ mt-24 md.mt-0 ] | [ text-5xl ultralight color-gray-500 ]'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam. $i</h3>
+                                                <p class='[ mt-24 md.mt-18 ] | [ leading-140 ]'> $contextSml</p>
                                             </div>
-                                        </li>";
+                                        </li>
+                                
+                                        ";  
                                     }
+                                    
                                     ?>
-                                  
-                     
                                 </ul>
 
                             </div>
@@ -206,7 +206,7 @@
             </section>
         </main>
 
-       
+
 
         <?php
         // Array of footer links
@@ -218,10 +218,10 @@
             <div class="l-container">
                 <div class="row">
                     <div class="col-xs-12 col-md-4">
-                    <p class="mt-24 leading-150 pr-18"><?=$contextLg ?> </p>
+                        <p class="mt-24 leading-150 pr-18"><?= $contextLg ?> </p>
                     </div>
                     <div class="col-xs-12 col-md-3 ">
-                            <p class="mt-24 mb-24 leading-150"><?=$footerContent2 ?> </p>
+                        <p class="mt-24 mb-24 leading-150"><?= $footerContent2 ?> </p>
                     </div>
                     <div class="col-xs-12 col-md-4 md.col-md-offset-2 flex md.justify-content-end">
                         <ul class="flex flex-col justify-content-between |  mt-24">
@@ -235,29 +235,30 @@
                         </ul>
                     </div>
                 </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-12  md.mt-48 mx-auto | "> <img class="mx-auto" src="https://placeholder.pics/svg/64x64" alt="">
-                            <h3 class="text-center mt-24">Lorem, ipsum dolor.</h3>
-                        </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12  md.mt-48 mx-auto | "> <img class="mx-auto" src="https://placeholder.pics/svg/64x64" alt="">
+                        <h3 class="text-center mt-24">Lorem, ipsum dolor.</h3>
                     </div>
+                </div>
 
         </footer>
     </body>
     <!-- JavaScript -->
     <script src="public/dist/js/app.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     </html>
 
-    <script >
+    <script>
         var elem = document.querySelector('.main-carousel');
-        var flkty = new Flickity( elem, {
-        // options
-        cellAlign: 'left',
-        contain: true,
-        draggable: false,
-        pageDots: false,
-        prevNextButtons: false,
-         autoPlay: 5000,  
-    pauseAutoPlayOnHover: false
+        var flkty = new Flickity(elem, {
+            // options
+            cellAlign: 'left',
+            contain: true,
+            draggable: false,
+            pageDots: false,
+            prevNextButtons: false,
+            autoPlay: 10000,
+            pauseAutoPlayOnHover: false
         });
     </script>
