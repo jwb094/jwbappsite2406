@@ -46,7 +46,8 @@
             $sectionTitle4 = "Lorem ipsum Title 4";
             $contextSml = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo";
             $contextMed = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi";
-            $contextLg = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi voluptas fugiat nostrum itaque laborum voluptate corporis adipisci nulla error suscipit libero nesciunt. Magnam!t nostrum itaque laborum voluptate corporis adipisci nulla error suscipit libero nesciunt. Magnam!";
+            $contextLg = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi voluptas fugiat nostrum itaque laborum voluptate corporis adipisci nulla error suscipit libero nesciunt. ";
+            $contextXLg = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi voluptas fugiat nostrum itaque laborum voluptate corporis adipisci nulla error suscipit libero nesciunt. Magnam!t nostrum itaque laborum voluptate corporis adipisci nulla error suscipit libero nesciunt. Magnam!";
             $footerContent1 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi voluptas fugiat nostrum itaque laborum";
             $footerContent2 = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatibus nemo cumque odio accusantium. Dicta, commodi voluptas fugiat nostrum itaque laborum";
             $testominalscontext = "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
@@ -138,32 +139,49 @@
                     </div>
                 </div>
             </section>
-            <section data-component-features class="border-1 border-solid border-black | py-96" id="features">
+            <section data-component-features class=" relative | py-96" id="features">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 text-center">
+                            <div class="c-arrow-down absolute top-0 left-0 right-0">
+                                <div class="arrow-down"></div>
+                            </div>
+                    </div>
+                </div>
                 <div class="l-container">
-                    <div class="grid grid-cols-1 md.grid-cols-2 row-gap-64">
-                        <?php
-                        for ($i = 1; $i <= 4; $i++) {
-                            echo "<div class=''>
-                            <h3 id='' class='mb-24 feature-$i'> $sectionTitle3  $i</h3>
-                            <p class=''> $contextLg</p>
-                        </div>";
-                        }
-                        ?>
+                    <div class="c-features-grid ">
 
+                        <div class="c-features-grid__item-1">
+                            <h3 id="" class="mb-24 feature-heading uppercase">Item 1</h3>
+                            <p class="leading-180"> <?= $contextLg ?></p>
+                        </div>
+                        <div class="c-features-grid__item-2">
+                            <h3 id="" class="mb-24 feature-heading uppercase"> Item 2</h3>
+                            <p class="leading-180"> <?= $contextLg ?></p>
+                        </div>
+                        <div class="c-features-grid__item-3">
+                            <div class="divider"></div>
+                        </div>
+                        <div class="c-features-grid__item-4">
+                            <h3 id="" class="mb-24 feature-heading uppercase"> Item 3</h3>
+                            <p class="leading-180"> <?= $contextLg ?></p>
+                        </div>
+                        <div class="c-features-grid__item-5">
+                            <h3 id="" class="mb-24 feature-heading uppercase"> Item 4</h3>
+                            <p class="leading-180"> <?= $contextLg ?></p>
+                        </div>
                     </div>
 
-
-                    <div class="col-xs-12 col-md-12 | mt-48">
-                        <a class="flex justify-content-center" href="#">Try Now Demo</a>
+                    <div class="col-xs-12 col-md-2 | mx-auto mt-48">
+                        <a class="flex justify-content-center p-12 bg-orange-200 color-white mx-auto md.mx-0 w-50p md.w-100p md.w-100 radius-xs" href="#">Try Demo</a>
                     </div>
                 </div>
 
             </section>
-            <section data-component-design class="border-1 border-solid border-black pt-96 pb-256" id="">
+            <section data-component-design class=" pt-96 pb-256" id="design">
                 <div class="l-container">
                     <div class="row">
                         <div class="col-xs-12 col-md-12">
-                            <div class="slider">                  
+                            <div class="slider">
                                 <ul class="main-carousel c-design-carousel">
                                     <?php
                                     for ($i = 1; $i <= 3; $i++) {
@@ -193,9 +211,9 @@
                                             </div>
                                         </li>
                                 
-                                        ";  
+                                        ";
                                     }
-                                    
+
                                     ?>
                                 </ul>
 
@@ -251,7 +269,18 @@
 
     <script>
         var elem = document.querySelector('.main-carousel');
+        var elem2 = document.querySelector('.main-carousel');
         var flkty = new Flickity(elem, {
+            // options
+            cellAlign: 'left',
+            contain: true,
+            draggable: false,
+            pageDots: false,
+            prevNextButtons: false,
+            autoPlay: 10000,
+            pauseAutoPlayOnHover: false
+        });
+        var flkty2 = new Flickity(elem2, {
             // options
             cellAlign: 'left',
             contain: true,
