@@ -102,7 +102,7 @@
                     </div>
                 </div>
             </section>
-            <section data-component-download-now class="border-1 border-solid border-black | pt-64 pb-64" id="download-now">
+            <section data-component-download-now class="pt-64 pb-64" id="download-now">
                 <div class="l-container">
                     <div class="row">
                         <div class="col-xs-12 col-md-offset-4 col-md-8 ">

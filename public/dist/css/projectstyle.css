@@ -48240,11 +48240,21 @@ select {
   padding-right: 2rem;
 }
 
+/*  
+* component-hero(home)
+*/
 [data-component-hero] {
   background: url("https://placeholder.pics/svg/1557x873") no-repeat center center;
   width: 100%;
   height: auto;
   background-size: cover;
+}
+
+/*  
+* component-download-now
+*/
+[data-component-download-now] {
+  background-color: rgb(220, 144, 4);
 }
 
 [data-component-testmonials] {
@@ -48263,6 +48273,9 @@ select {
   background-color: white;
 }
 
+/*  
+* component-features
+*/
 [data-component-features] {
   background-color: #fff;
 }
@@ -48324,6 +48337,9 @@ select {
   }
 }
 
+/*  
+* component-design
+*/
 [data-component-design] {
   background-color: rgba(218, 211, 211, 0.3215686275);
 }
@@ -48336,6 +48352,9 @@ select {
   }
 }
 
+/*  
+* footer section
+*/
 footer {
   background-color: #08C7D1;
   color: #fff;
