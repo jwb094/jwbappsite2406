@@ -4,4 +4,18 @@
     background-size: cover;
     .c-testmonials-bg{
     }
+
+    .flickity-page-dots {
+        .dot {
+        width: 20px;
+        height: 20px;
+        margin: 0 8px;
+       background: transparent;
+       border: 2px solid white;
+        }
+        .dot.is-selected{
+    background-color: white;
+        }
+    }
+    
 }

@@ -105,7 +105,7 @@
             <section data-component-download-now class="border-1 border-solid border-black | pt-64 pb-64" id="download-now">
                 <div class="l-container">
                     <div class="row">
-                        <div class="col-xs-12 col-md-8">
+                        <div class="col-xs-12 col-md-offset-4 col-md-8 ">
                             <h2 class="mb-24"><?= $sectionTitle2 ?></h2>
                             <div class=" flex flex-col  justify-content-between | mb-24 ">
                                 <p class="mb-24"><?= $contextLg ?>

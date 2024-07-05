@@ -48252,6 +48252,17 @@ select {
   background-position: center;
   background-size: cover;
 }
+[data-component-testmonials] .flickity-page-dots .dot {
+  width: 20px;
+  height: 20px;
+  margin: 0 8px;
+  background: transparent;
+  border: 2px solid white;
+}
+[data-component-testmonials] .flickity-page-dots .dot.is-selected {
+  background-color: white;
+}
+
 [data-component-features] {
   background-color: #fff;
 }
