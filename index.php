@@ -119,25 +119,29 @@
                     </div>
                 </div>
             </section>
-            <section data-component-testmonials class="border-1 border-solid border-black py-96" id="testmonials">
+            <section data-component-testmonials class="bg-red-500 py-96" id="testmonials">
+            <div class="c-testmonials-bg">     
                 <div class="l-container">
                     <div class="row ">
                         <div class="col-xs-12 col-md-12">
-                            <div class="c-testmonials-main-carousel">
-                                <?php
-                                for ($i = 1; $i <= 3; $i++) {
+                            <div class="slider">
+                                <div class="c-testmonials-main-carousel">
+                                    
+                                    <?php
+                                    for ($i = 1; $i <= 3; $i++) {
 
-                                    echo "<div id='' class='c-testmonials-carousel-item-$i | flex flex-col justify-content-center align-content-center'>
-                                        <img class='w-3-12 | mx-auto' src='https://placeholder.pics/svg/132x132' alt=''>
-                                        <p class='mt-24  mx-auto'>$testominalscontext </p>
-                                    </div>";
-                                }
-                                ?>
+                                        echo "<div class='col-xs-12 col-md-12 w-100p c-testmonials-carousel-item' id='' class='c-testmonials-carousel-item-$i | flex flex-col justify-content-center align-content-center'>
+                                            <img class='w-2-12 | mx-auto' src='https://placeholder.pics/svg/132x132' alt=''>
+                                            <p class='mt-24  mx-auto text-center color-white text-6xl'>$testominalscontext </p>
+                                        </div>";
+                                    }
+                                    ?>
 
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
             </section>
             <section data-component-features class=" relative | py-96" id="features">
                 <div class="row">
@@ -232,7 +236,7 @@
         $socialLinks = ["Fb", "Ln", "X", "Insta"];
         $footerPageLinks = ["Item 1", "Item 2", "item 3", "item 4", "item 5"];
         ?>
-        <footer class="border-1 border-solid border-black | pt-96 pb-256">
+        <footer class=" | pt-96 pb-256">
             <div class="l-container">
                 <div class="row">
                     <div class="col-xs-12 col-md-4">
@@ -269,7 +273,7 @@
 
     <script>
         var elem = document.querySelector('.main-carousel');
-        var elem2 = document.querySelector('.main-carousel');
+        var elem2 = document.querySelector('.c-testmonials-main-carousel');
         var flkty = new Flickity(elem, {
             // options
             cellAlign: 'left',
@@ -282,12 +286,12 @@
         });
         var flkty2 = new Flickity(elem2, {
             // options
-            cellAlign: 'left',
-            contain: true,
-            draggable: false,
-            pageDots: false,
-            prevNextButtons: false,
-            autoPlay: 10000,
-            pauseAutoPlayOnHover: false
+            // cellAlign: 'left',
+            // contain: true,
+            // draggable: false,
+            // pageDots: false,
+             prevNextButtons: false,
+             autoPlay: 8000,
+            // pauseAutoPlayOnHover: false
         });
     </script>
