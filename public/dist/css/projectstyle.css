@@ -48255,8 +48255,28 @@ select {
 */
 [data-component-download-now] {
   background-color: rgb(220, 144, 4);
+  color: #fff;
+}
+@media (min-width: 900px) {
+  [data-component-download-now] {
+    background-image: url(https://fakeimg.pl/845x1308);
+    background-position-x: right;
+    background-position-y: 65px;
+    background-repeat: no-repeat;
+    background-size: 30%;
+  }
+}
+[data-component-download-now] h1 {
+  font-size: 55px;
+}
+[data-component-download-now] p {
+  font: size 16px;
+  line-height: 30px;
 }
 
+/*  
+* component-testmonials
+*/
 [data-component-testmonials] {
   background-image: url(https://loremflickr.com/1957/500/brazil,rio);
   background-position: center;

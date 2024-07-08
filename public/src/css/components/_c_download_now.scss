@@ -2,5 +2,22 @@
 * component-download-now
 */
 [data-component-download-now]{
+
     background-color: rgb(220, 144, 4);
+    @media (min-width: $med) {
+    background-image:  url(https://fakeimg.pl/845x1308);
+    background-position-x:right ;
+    background-position-y:65px ;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    }
+    color: #fff;
+
+    h1{
+        font-size: 55px;
+    }
+    p  {
+        font: size 16px;
+        line-height: 30px;
+    }
 }
