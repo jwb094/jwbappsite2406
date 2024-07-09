@@ -60,19 +60,33 @@
                 <div class="border-1 border-solid border-black flex flex-col md.justify-content-center md.align-content-center md.flex-wrap py-56 md.py-48 h-100p">
                     <div class="l-container | h-100p">
                         <div class="row | flex-row justify-content-center md.justify-content-unset h-100p">
-                            <div class="col-xs-12 | text-center">
-                                <h1><?= $sectionTitle1 ?></h1>
-                            </div>
-                            <div class="col-xs-12">
-                                <p><?= $contextLg ?></p>
+                            <!-- <div class="col-xs-12 | text-center">
+                            
+                            </div> -->
+                            <div class="col-xs-12 col-md-12 | text-center | md.mt-72 mx-auto md.px-192">
+                            <h1 class="heading | mt-auto text-4xl"><?= $sectionTitle1 ?></h1>
+                                <p class="italic"><?= $contextLg ?></p>
                             </div>
 
 
-                            <div class="col-xs-12 | text-center">
-                                <button>Play</button>
+                            <div class="col-xs-12 col-md-12 | text-center">
+                                <!-- <button>Play</button> -->
+                                <div class="modal flex justify-content-center align-items-center h-100p">
+                                    <a class="flex justify-content-center video_modal_btn" href="#">
+                                        <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" fill="white"></path>
+                                            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" fill="white"></path>
+                                        </svg>
+                                    </a>
+                                    <div class="video-container">
+                                        <span class="close">&#10006;</span>
+                                        <video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls="controls"></video>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="col-xs-12 mt-auto | text-center">
-                                <a href="">CTA</a>
+                            <div class="col-xs-12  col-md-2 | mt-auto  text-center">
+                                <a class="c_btn c_btn--get_started | flex justify-content-center p-12 color-white mx-auto md.mx-0 w-50p md.w-100p md.w-100 radius-xs" href="#">Get Started</a>
                             </div>
                         </div>
                         <!-- <div class="row | flex flex-col">
@@ -123,35 +137,35 @@
                 </div>
             </section>
             <section data-component-testmonials class="bg-red-500 py-96" id="testmonials">
-            <div class="c-testmonials-bg">     
-                <div class="l-container">
-                    <div class="row ">
-                        <div class="col-xs-12 col-md-12">
-                            <div class="slider">
-                                <div class="c-testmonials-main-carousel">
-                                    
-                                    <?php
-                                    for ($i = 1; $i <= 3; $i++) {
+                <div class="c-testmonials-bg">
+                    <div class="l-container">
+                        <div class="row ">
+                            <div class="col-xs-12 col-md-12">
+                                <div class="slider">
+                                    <div class="c-testmonials-main-carousel">
 
-                                        echo "<div class='col-xs-12 col-md-12 w-100p c-testmonials-carousel-item' id='' class='c-testmonials-carousel-item-$i | flex flex-col justify-content-center align-content-center'>
+                                        <?php
+                                        for ($i = 1; $i <= 3; $i++) {
+
+                                            echo "<div class='col-xs-12 col-md-12 w-100p c-testmonials-carousel-item' id='' class='c-testmonials-carousel-item-$i | flex flex-col justify-content-center align-content-center'>
                                             <img class='w-2-12 | mx-auto' src='https://placeholder.pics/svg/132x132' alt=''>
                                             <p class='mt-24  mx-auto text-center color-white text-6xl'>$testominalscontext </p>
                                         </div>";
-                                    }
-                                    ?>
+                                        }
+                                        ?>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
             </section>
             <section data-component-features class=" relative | py-96" id="features">
                 <div class="row">
                     <div class="col-xs-12 col-md-12 text-center">
-                            <div class="c-arrow-down absolute top-0 left-0 right-0">
-                                <div class="arrow-down"></div>
-                            </div>
+                        <div class="c-arrow-down absolute top-0 left-0 right-0">
+                            <div class="arrow-down"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="l-container">
@@ -293,8 +307,8 @@
             // contain: true,
             // draggable: false,
             // pageDots: false,
-             prevNextButtons: false,
-             autoPlay: 8000,
+            prevNextButtons: false,
+            autoPlay: 8000,
             // pauseAutoPlayOnHover: false
         });
     </script>
