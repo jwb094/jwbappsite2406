@@ -48244,10 +48244,78 @@ select {
 * component-hero(home)
 */
 [data-component-hero] {
-  background: url("https://placeholder.pics/svg/1557x873") no-repeat center center;
+  background: url("https://placeholder.pics/svg/1557x1073") no-repeat center center;
   width: 100%;
   height: auto;
   background-size: cover;
+}
+[data-component-hero] .heading {
+  animation: drop 0.75s linear forwards;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(-200px) scaleY(0.9);
+  }
+  5% {
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(0px) scaleY(1);
+  }
+  65% {
+    transform: translateY(-17px) scaleY(0.9);
+  }
+  75% {
+    transform: translateY(-22px) scaleY(0.9);
+  }
+  100% {
+    transform: translateY(0px) scaleY(1);
+  }
+}
+[data-component-hero] .c_btn--get_started {
+  background-color: #08C7D1;
+}
+[data-component-hero] .c_btn--get_started:hover {
+  background-color: rgba(255, 166, 0, 0.4);
+}
+[data-component-hero] .video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background-color: rgba(255, 122, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+[data-component-hero] .video-container .close {
+  position: absolute;
+  top: 10%;
+  right: 25px;
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+}
+[data-component-hero] .video-container video {
+  width: 90%;
+  max-width: 800px;
+  transform: scale(0);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  outline: none;
+  transition: all 0.3s;
+}
+[data-component-hero] .video-container.show {
+  pointer-events: all;
+  opacity: 1;
+  background-color: hsla(0, 0%, 0%, 0.75);
+}
+[data-component-hero] .video-container.show video {
+  transform: scale(2);
 }
 
 /*  
