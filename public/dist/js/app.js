@@ -11,6 +11,27 @@
 
 /***/ }),
 
+/***/ "./public/src/js/video_modal_app.js":
+/*!******************************************!*\
+  !*** ./public/src/js/video_modal_app.js ***!
+  \******************************************/
+/***/ (() => {
+
+var btn = document.querySelector('.video_modal_btn');
+var videoContainer = document.querySelector('.video-container');
+var close = document.querySelector('.close');
+var popUpVideoModal = document.getElementById("c_video-modal");
+btn.addEventListener('click', function () {
+  videoContainer.classList.add('show');
+  popUpVideoModal.play();
+});
+close.addEventListener('click', function () {
+  popUpVideoModal.pause();
+  videoContainer.classList.remove('show');
+});
+
+/***/ }),
+
 /***/ "./public/src/css/projectstyle.scss":
 /*!******************************************!*\
   !*** ./public/src/css/projectstyle.scss ***!
@@ -161,6 +182,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
+/******/ 	__webpack_require__.O(undefined, ["public/dist/css/projectstyle"], () => (__webpack_require__("./public/src/js/video_modal_app.js")))
 /******/ 	__webpack_require__.O(undefined, ["public/dist/css/projectstyle"], () => (__webpack_require__("./public/src/js/app.js")))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["public/dist/css/projectstyle"], () => (__webpack_require__("./public/src/css/projectstyle.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);

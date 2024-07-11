@@ -2,7 +2,10 @@
 * component-hero(home)
 */
 [data-component-hero]{
-    background: url("https://placeholder.pics/svg/1557x1073") no-repeat center center;
+    //url("https://placeholder.pics/svg/1557x1073")
+    background-image: linear-gradient(to bottom,rgba(14, 54, 87, 0.62),rgba(255, 170, 0, 0.519),black); ;
+    background-repeat: no-repeat;
+    background-position: center center;
     width: 100%;
     height: auto;
     background-size: cover;

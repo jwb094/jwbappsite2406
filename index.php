@@ -63,7 +63,7 @@
                             <!-- <div class="col-xs-12 | text-center">
                             
                             </div> -->
-                            <div class="col-xs-12 col-md-12 | text-center | md.mt-72 mx-auto md.px-192">
+                            <div class="col-xs-12 col-md-12 | text-center | md.mt-72 mx-auto md.px-224">
                             <h1 class="heading | mt-auto text-4xl"><?= $sectionTitle1 ?></h1>
                                 <p class="italic"><?= $contextLg ?></p>
                             </div>
@@ -80,7 +80,7 @@
                                     </a>
                                     <div class="video-container">
                                         <span class="close">&#10006;</span>
-                                        <video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls="controls"></video>
+                                        <video class="" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls="controls"></video>
                                     </div>
                                 </div>
 
