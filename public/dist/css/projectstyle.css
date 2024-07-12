@@ -48317,7 +48317,12 @@ select {
   background-color: hsla(0, 0%, 0%, 0.75);
 }
 [data-component-hero] .video-container.show video {
-  transform: scale(2);
+  transform: scale(1);
+}
+@media (min-width: 900px) {
+  [data-component-hero] .video-container.show video {
+    transform: scale(2);
+  }
 }
 
 /*  
