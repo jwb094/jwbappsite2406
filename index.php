@@ -80,7 +80,7 @@
                                     </a>
                                     <div class="video-container">
                                         <span class="close">&#10006;</span>
-                                        <video class="" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls="controls"></video>
+                                        <video id="c_video-modal" class="" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls="controls"></video>
                                     </div>
                                 </div>
 
